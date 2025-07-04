@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wagon Load Monitor</title>
+</head>
+<body>
+  <h2>Live Wagon Weight</h2>
+  <div id="data">Fetching...</div>
+
+  <script>
+    setInterval(() => {
+      fetch("http://your-api-url.com/latest")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("data").innerHTML =
+            `Wagon ID: ${data.wagon_id} <br> Weight: ${data.weight} kg`;
+        });
+    }, 5000);
+  </script>
+</body>
+</html>
