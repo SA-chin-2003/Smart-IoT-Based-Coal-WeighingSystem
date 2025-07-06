@@ -40,11 +40,6 @@ To prevent cargo loss, fuel waste, and safety issues by using an IoT solution to
 
 ---
 
-## 📷 Block Diagram
-Add your image in `images/block_diagram.png`.
-
----
-
 ## 🧪 Sample Output
 > Weight: 1234.56 kg (Wagon 001)
 
